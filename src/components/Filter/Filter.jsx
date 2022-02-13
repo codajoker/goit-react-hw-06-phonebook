@@ -1,6 +1,6 @@
 import React from 'react';
 import { useDispatch } from 'react-redux';
-import { changeFilter } from '../../reducer/Store';
+import { changeFilter } from '../../redux/redux-action';
 
 export const Filter = () => {
   const dispatch = useDispatch();

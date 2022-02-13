@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 
 import { List, ListItem, Button } from './ListContact.styled';
 import { useDispatch } from 'react-redux';
-import { removeItem } from '../../reducer/Store';
+import { removeItem } from '../../redux/redux-action';
 export const ListContact = ({ contacts }) => {
   const dispatch = useDispatch();
   return (

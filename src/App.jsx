@@ -1,8 +1,8 @@
 import { Section, Form, ListContact, Filter } from './components';
 import { useSelector, useDispatch } from 'react-redux';
-import { addItem } from './reducer/Store';
+import { addItem } from './redux/redux-action';
 function App() {
-  const contacts = useSelector(state => state.contacts.item);
+  let contacts = useSelector(state => state.contacts.item);
   const dispatch = useDispatch();
   const filter = useSelector(state => state.contacts.filter);
 
